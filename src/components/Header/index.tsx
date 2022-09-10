@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderNav, Localization, IconMap } from './styles'
+import { HeaderContainer, HeaderNav, Localization } from './styles'
 
 import { MapPin } from 'phosphor-react'
 
