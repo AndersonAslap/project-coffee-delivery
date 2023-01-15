@@ -4,13 +4,13 @@ import { MapPin } from 'phosphor-react'
 
 import logo from '../../assets/logo.svg'
 import { NavLink } from 'react-router-dom'
-import { ShoppingCartCheckout } from './components/ShoppingCartCheckout'
+import { ShoppingCartCheckout } from '../ShoppingCartCheckout'
 
 export function Header() {
   return (
     <HeaderContainer>
       <NavLink to="/">
-        <img src={logo} />
+        <img src={logo} alt="logomarca" />
       </NavLink>
 
       <HeaderNav>

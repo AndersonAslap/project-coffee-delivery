@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 
 export const BannerContainer = styled.div`
-  width: 100%;
-  max-width: 1120px;
-  height: 544px;
-  margin: auto;
-
   padding: 94px 0px 108px 0px;
 `
 
