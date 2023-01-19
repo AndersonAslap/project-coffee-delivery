@@ -5,20 +5,26 @@ import {
   MapPinLine,
   Money,
 } from 'phosphor-react'
+import { cart } from '../../utils/db'
 import {
+  CartItem,
+  CartItems,
   CheckoutContainer,
   CheckoutContent,
   CompletedOrder,
+  ConfirmPaymentButton,
   Delivery,
   DeliveryContent,
   DeliveryHeader,
   FinishOrder,
+  FinishOrderContainer,
   InputComponent,
   Payment,
   PaymentContent,
   PaymentHeader,
   PaymentType,
   PaymentTypeButton,
+  Sumary,
 } from './styles'
 
 export function Checkout() {
@@ -93,6 +99,47 @@ export function Checkout() {
 
         <FinishOrder>
           <span className="title">Cafés selecionados</span>
+
+          <FinishOrderContainer>
+            <CartItems>
+              {cart.map((item) => (
+                <CartItem key={item.title}>
+                  <div>
+                    <img src={item.image} />
+
+                    <section>
+                      <label>{item.title}</label>
+                      <section>
+                        <button>1</button>
+                        <button>2</button>
+                      </section>
+                    </section>
+                  </div>
+
+                  <label>{item.price}</label>
+                </CartItem>
+              ))}
+            </CartItems>
+
+            <Sumary>
+              <section>
+                <label>Total de items</label>
+                <label>R$ 19,90</label>
+              </section>
+
+              <section>
+                <label>Entregas</label>
+                <label>R$ 19,90</label>
+              </section>
+
+              <section>
+                <label>Total</label>
+                <label>R$ 19,90</label>
+              </section>
+            </Sumary>
+
+            <ConfirmPaymentButton>Confirmar Pagamento</ConfirmPaymentButton>
+          </FinishOrderContainer>
         </FinishOrder>
       </CheckoutContent>
     </CheckoutContainer>

@@ -194,3 +194,87 @@ export const PaymentContent = styled.main``
 /**
  * block 3 - Finish order
  */
+
+export const FinishOrderContainer = styled.div`
+  width: 100%;
+  height: 498px;
+
+  margin-top: 15px;
+
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 24px;
+
+  background-color: ${({ theme }) => theme['base-card']};
+
+  border-radius: 6px 44px;
+`
+
+export const CartItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+`
+
+export const CartItem = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid ${({ theme }) => theme['base-button']};
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  h3 {
+    display: block;
+    height: 21px;
+    background-color: pink;
+  }
+`
+
+export const Sumary = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 13.5px;
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+    }
+  }
+`
+export const ConfirmPaymentButton = styled.button`
+  width: 100%;
+  height: 46px;
+  text-align: center;
+  background-color: ${({ theme }) => theme['yellow-500']};
+  border-radius: 6px;
+
+  border: 0;
+
+  font-weight: bold;
+  font-family: 'Roboto';
+  line-height: 160%;
+  font-size: 14px;
+  color: ${({ theme }) => theme.white};
+
+  cursor: pointer;
+`

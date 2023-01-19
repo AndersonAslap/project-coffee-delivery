@@ -116,3 +116,20 @@ export const data = [
     price: 990,
   },
 ]
+
+export const cart = [
+  {
+    image: coffee01,
+    flags: ['TRADICIONAL'],
+    title: 'Expresso Tradicional',
+    description: 'O tradicional café feito com água quente e grãos moídos',
+    price: 990,
+  },
+  {
+    image: coffee02,
+    flags: ['TRADICIONAL'],
+    title: 'Expresso Americano',
+    description: 'Expresso diluído, menos intenso que o tradicional',
+    price: 990,
+  },
+]
